@@ -2,7 +2,7 @@ export default function add(x, y) {
   return x + y;
 }
 
-let wait = ms => resolve => setTimeout(resolve, ms)
+let wait = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 class Rect {
   constructor(x, y) {
